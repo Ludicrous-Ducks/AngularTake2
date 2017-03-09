@@ -1,7 +1,7 @@
 "use strict";
 
 var app = angular.module("Bangazon", ['ngRoute'])
-    .constant('apiUrl', 'http://localhost:8000/api');
+    .constant('apiUrl', 'http://localhost:7000/api');
 
 angular.module("Bangazon").config(
   [
