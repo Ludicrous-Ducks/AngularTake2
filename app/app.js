@@ -18,21 +18,21 @@ angular.module("Bangazon").config(
         $httpProvider.defaults.withCredentials = true;
 
         $routeProvider
-          .when('/', {
+          .when('/login', {
             controller: "AuthCtrl",
-            templateUrl: 'bangazon/auth/login.html'
+            templateUrl: 'partials/auth.html'
           })
           .when('/register', {
             controller: "AuthCtrl",
-            templateUrl: 'bangazon/auth/register.html'
+            templateUrl: 'partials/auth.html'
           })
-          .when('/addProduct', {
-            templateUrl: 'partials/createProduct.html',
-            controller:'addProductCtrl'
-          })
-          .when('/addProductType', {
-            templateUrl:'partials/addProductType.html',
-            controller: 'addProductTypeCtrl'
-          });
+          // .when('/addProduct', {
+          //   templateUrl: 'partials/createProduct.html',
+          //   controller:'addProductCtrl'
+          // })
+          // .when('/addProductType', {
+          //   templateUrl:'partials/addProductType.html',
+          //   controller: 'addProductTypeCtrl'
+          // });
       }
   ]);
