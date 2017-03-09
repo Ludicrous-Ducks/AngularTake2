@@ -7,13 +7,13 @@ app.controller("AuthCtrl", [
   'RootFactory',
 function($scope, $http, $location, RootFactory) {
 
-  $scope.user = {
-    username: "tinyhands",
-    password: "tinyhands",
-    email: "tinyhands@tinyhands.com",
-    first_name: "Donald",
-    last_name: "Trump"
-  };
+  // $scope.user = {
+  //   username: "tinyhands",
+  //   password: "tinyhands",
+  //   email: "tinyhands@tinyhands.com",
+  //   first_name: "Donald",
+  //   last_name: "Trump"
+  // };
 
   $scope.register = function() {
     $http({
@@ -42,6 +42,7 @@ function($scope, $http, $location, RootFactory) {
   };
 
   $scope.login = function() {
+    console.log("user", $scope.user);
     $http({
       url: "http://localhost:7000/api-auth-token/",
       method: "POST",
