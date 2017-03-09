@@ -1,7 +1,7 @@
 "use strict";
 
 var app = angular.module("Bangazon", ['ngRoute'])
-    .constant('apiUrl', 'http://localhost:7000/api');
+    .constant('apiUrl', 'http://localhost:7000/api/');
 
 angular.module("Bangazon").config(
   [
@@ -29,5 +29,9 @@ angular.module("Bangazon").config(
             controller: "AuthCtrl",
             templateUrl: 'partials/landing.html'
           })
+          .when('/products', {
+            controller: "productListCtrl",
+            templateUrl: 'partials/productList.html'
+          });
       }
   ]);

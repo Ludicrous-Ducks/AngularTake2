@@ -11,7 +11,7 @@ app.factory('RootFactory', [
         return $http({
           url: apiUrl,
           headers: {
-            'Authorization' : "Token" + secure_token
+            'Authorization' : "Token " + secure_token
           }
         }).then(res => res.data);
       },

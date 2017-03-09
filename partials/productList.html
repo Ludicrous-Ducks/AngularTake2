@@ -1,0 +1,9 @@
+<h1>Product List</h1>
+	<ul ng-repeat="products in products">
+		<li a ng-href="#products/{{products.id}}">{{products.name}}</li>
+		<li>{{products.price}}</li>
+		<li>{{products.description}}</li>
+		<li>{{products.quantity}}</li>
+		<li>{{products.product_type}}</li>
+		<li>{{products.customer}}</li>
+	</ul>
