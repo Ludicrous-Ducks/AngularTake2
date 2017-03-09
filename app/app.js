@@ -14,8 +14,8 @@ angular.module('Bangazon').config(
 
       $routeProvider
       	.when('/', {
-      		controller: 'AuthController',
-      		templateUrl: 'partials/login.html'
+      		controller: 'AuthCtrl',
+      		templateUrl: 'partials/auth.html'
       	});
 		}
 ]);
