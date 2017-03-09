@@ -1,0 +1,20 @@
+{
+  "name": "lib",
+  "description": "bangazon angular",
+  "main": "Gruntfile.js",
+  "authors": [
+    "Jack Pinkston",
+    "Dani Adkins",
+    "belve marks",
+    "shawn mitchell",
+    "Julia Kim-Chung"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Ludicrous-Ducks/AngularTake2",
+  "dependencies": {
+    "angular": "^1.6.3",
+    "jquery": "^3.1.1",
+    "angular-route": "^1.6.3",
+    "bootstrap": "^3.3.7"
+  }
+}
