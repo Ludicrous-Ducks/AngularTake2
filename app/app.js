@@ -5,7 +5,7 @@ var app = angular.module("Bangazon", ['ngRoute'])
 
 angular.module("Bangazon").config(
   [
-      'interpolateProvider',
+      '$interpolateProvider',
       '$httpProvider',
       '$routeProvider',
       function($interpolateProvider, $httpProvider, $routeProvider) {
@@ -15,7 +15,6 @@ angular.module("Bangazon").config(
 
         $httpProvider.defaults.xsrfCookieName = 'csrftoken';
         $httpProvider.defaults.xsrfHeaderName = 'X-CSRFToken';
-        $httpProvider.defaults.withCredentials = true;
 
         $routeProvider
           .when('/login', {
@@ -26,13 +25,9 @@ angular.module("Bangazon").config(
             controller: "AuthCtrl",
             templateUrl: 'partials/auth.html'
           })
-          // .when('/addProduct', {
-          //   templateUrl: 'partials/createProduct.html',
-          //   controller:'addProductCtrl'
-          // })
-          // .when('/addProductType', {
-          //   templateUrl:'partials/addProductType.html',
-          //   controller: 'addProductTypeCtrl'
-          // });
+          .when('/landing', {
+            controller: "AuthCtrl",
+            templateUrl: 'partials/landing.html'
+          })
       }
   ]);

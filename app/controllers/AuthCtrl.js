@@ -17,7 +17,7 @@ function($scope, $http, $location, RootFactory) {
 
   $scope.register = function() {
     $http({
-      url: "http://localhost:8000/register",
+      url: "http://localhost:7000/register",
       method: "POST",
       headers: {
         "Content-Type": "application/x-www-form-urlencoded"
@@ -43,7 +43,7 @@ function($scope, $http, $location, RootFactory) {
 
   $scope.login = function() {
     $http({
-      url: "http://localhost:8000/api-token-auth",
+      url: "http://localhost:7000/api-auth-token/",
       method: "POST",
       data: {
         "username": $scope.user.username,
