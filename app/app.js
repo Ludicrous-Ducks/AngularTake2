@@ -3,7 +3,7 @@
 let app = angular.module("Bangazon", ['ngRoute'])
     .constant('apiUrl', 'http://localhost:7000/api');
 
-angular.module('BangaClient').config(
+angular.module('Bangazon').config(
 [
     '$interpolateProvider',
     '$routeProvider',
@@ -19,4 +19,5 @@ angular.module('BangaClient').config(
       	});
 		}
 ]);
+
 
