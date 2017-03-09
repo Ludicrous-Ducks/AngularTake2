@@ -17,10 +17,6 @@ angular.module('BangaClient').config(
       		controller: 'AuthController',
       		templateUrl: 'partials/login.html'
       	});
-
-
-
 		}
-
 ]);
 
